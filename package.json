@@ -19,6 +19,7 @@
     "dist",
     "svg",
     "import.js",
+    "browse.html",
     "README.md"
   ],
   "scripts": {
