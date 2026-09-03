@@ -1,0 +1,33 @@
+{
+  "name": "@glyphra/icons",
+  "version": "0.1.0",
+  "description": "Glyphra's SVG icon library for React, Next.js, and plain HTML.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./import.js": "./import.js",
+    "./icons-map.json": "./dist/icons-map.json"
+  },
+  "files": [
+    "dist",
+    "svg",
+    "import.js",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "pack:check": "npm run build && npm pack --dry-run"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "keywords": ["icons", "svg", "react", "nextjs"],
+  "license": "MIT"
+}
